@@ -1,29 +1,27 @@
 {
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "strict": true,
-    "jsx": "react",
-    "importHelpers": true,
-    "moduleResolution": "node",
-    "experimentalDecorators": true,
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "sourceMap": true,
-    "baseUrl": ".",
+    "baseUrl": "./",
     "paths": {
-      "@/*": [
-        "src/*"
-      ]
+      "axis": ["src/components/index.tsx"],
+      "axis/es/*": ["src/components/*"]
     },
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "noUnusedParameters": true,
+    "noImplicitAny": true,
+    "target": "es6",
+    "importHelpers": true,
     "lib": [
-      "esnext",
       "dom",
-      "dom.iterable",
-    ]
+      "es2017"
+    ],
+    "skipLibCheck": true
   },
   "include": [
-    "types/*.ts"
+    "typings/*.ts"
   ],
   "exclude": [
     "node_modules"
