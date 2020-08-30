@@ -1,0 +1,208 @@
+// prefix
+$css-prefix-iconfont: axis-icon;
+
+// 定义不同状态的颜色
+// 主体颜色
+$primary-color: #2d8cf0;
+// 辅助颜色
+$info-color: #2db7f5;
+// 成功颜色
+$success-color: #19be6b;
+// 警告颜色
+$warning-color: #ff9900;
+// 错误
+$error-color: #ed4014;
+// 普通颜色
+$normal-color: #e6ebf1;
+
+$white: #fff;
+$black: #000;
+
+// 定义文字和背景颜色
+// 标题颜色
+$title-color: #17233d;
+// 普通文字颜色
+$text-color: #515a6e;
+// 文字辅助颜色
+$text-color-secondary: lighten($black, 45%);
+// 超链接颜色
+$link-color: #2D8cF0;
+// 选中颜色，基于 $primary-color 变淡 10%
+$selected-color: lighten($primary-color, 90%);
+
+// 定义背景颜色
+// 页面背景颜色
+$body-background: #fff;
+// 页面基础背景颜色
+$background-color-base: #f7f7f7;
+// 页面选中时背景颜色
+$background-color-select-hover: #f3f3f3;
+// 组件背景颜色
+$component-background: #fff;
+
+// 定义文字大小
+// 基础字体大小
+$font-size-base: 14px;
+$font-size-small: 12px;
+$font-size-middle: $font-size-base;
+$font-size-large: 16px;
+
+// 定义 padding
+$padding-xs: 8px;
+$padding-sm: 12px;
+$padding-md: 16px;
+$padding-lg: 24px;
+
+// 定义 shadow
+$shadow-color: rgba(0, 0, 0, .2);
+$shadow-up: 0 -1px 6px $shadow-color;
+$shadow-down: 0 1px 6px $shadow-color;
+$shadow-left: -1px 0 6px $shadow-color;
+$shadow-right: 1px 0 6px $shadow-color;
+
+// 定义 border
+$border-color-base: #dcdee2;
+$border-color-split: #e8eaec;
+$border-color-inside: #e8eaec;
+$border-color-outside: #dcdee2;
+$border-width-base: 1px;
+$border-style-base: solid;
+$border-radius-base: 6px;
+$border-radius-small: 4px;
+
+// 定义行高
+$line-height-base: 1.5;
+
+// 定义其他
+$cursor-disabled: not-allowed;
+
+// 定义动画
+$animation-time: .3s;
+$animation-time-quick: .15s;
+$transition-time: .2s;
+$ease-in-out: ease-in-out;
+
+// 定义按钮
+$btn-height-base: 32px;
+$btn-height-large: 40px;
+$btn-height-small: 24px;
+
+$btn-padding-base: 0 $padding-md - 1px;
+$btn-padding-large: $btn-padding-base;
+$btn-padding-small: 0 $padding-xs - 1px;
+
+$btn-font-weight: normal;
+$btn-padding-base-icon: 5px 15px 6px;
+$btn-padding-large-icon: 6px 15px 6px 15px;
+$btn-padding-small-icon: 1px 7px 2px;
+$btn-font-size: $font-size-base;
+$btn-font-size-large: $font-size-large;
+$btn-font-size-small: $font-size-base;
+$btn-border-radius: 4px;
+$btn-border-radius-small: 3px;
+$btn-group-border: lighten($primary-color, 5%);
+
+$btn-disable-color: #c5c8ce;
+$btn-disable-bg: $background-color-base;
+$btn-disable-border: $border-color-base;
+
+$btn-default-color: $text-color;
+$btn-default-bg: #fff;
+$btn-default-border: $border-color-base;
+
+$btn-primary-color: #fff;
+$btn-primary-bg: $primary-color;
+
+$btn-ghost-color: $text-color;
+$btn-ghost-bg: #fff;
+$btn-ghost-border: $border-color-base;
+
+$btn-circle-size: $btn-height-base;
+$btn-circle-size-large: $btn-height-large;
+$btn-circle-size-small: $btn-height-small;
+
+$btn-square-size: $btn-height-base;
+$btn-square-size-large: $btn-height-large;
+$btn-square-size-small: $btn-height-small;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

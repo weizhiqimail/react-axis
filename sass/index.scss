@@ -1,0 +1,15 @@
+@import "../src/components/styles/index";
+@import "../src/components/styles/mixins/button";
+
+.home {
+  color: $primary-color;
+}
+
+.button {
+  @include button-color($btn-primary-color, $btn-primary-bg, $border-color-base);
+}
+
+.button-s {
+  @include button-variant($btn-primary-color, $btn-primary-bg, $border-color-base);
+}
+
