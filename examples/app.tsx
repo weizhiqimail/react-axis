@@ -2,9 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, NavLink, Route, Switch } from 'react-router-dom';
 import './style/index.scss';
 
-import HomeExample from './routes/home.example';
-import ButtonExample from './routes/button.example';
-import IconExample from './routes/icon.example';
+import routes from './routes/index.example';
 
 const App = () => {
   return (
@@ -12,28 +10,22 @@ const App = () => {
       <Router>
         <nav>
           <ul>
-            <li>
-              <NavLink exact={true} to="/">
-                首页
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact={true} to="/button">
-                button
-              </NavLink>
-            </li>
-            <li>
-              <NavLink exact={true} to="/icon">
-                icon
-              </NavLink>
-            </li>
+            {
+              routes.map(route => (
+                <li key={route.to}>
+                  <NavLink to={route.to} exact={route.exact}>{route.title}</NavLink>
+                </li>
+              ))
+            }
           </ul>
         </nav>
         <div className="content">
           <Switch>
-            <Route exact={true} path="/" component={HomeExample} />
-            <Route exact={true} path="/button" component={ButtonExample} />
-            <Route exact={true} path="/icon" component={IconExample} />
+            {
+              routes.map(route => (
+                <Route key={route.title} path={route.to} exact={route.exact} component={route.component}/>
+              ))
+            }
           </Switch>
         </div>
       </Router>

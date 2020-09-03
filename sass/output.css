@@ -1,45 +1,36 @@
 .axis-btn {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  height: 32px;
-  padding: 0 15px;
-  font-size: 14px;
-  border-radius: 4px;
-  transition: color 0.2s linear, background-color 0.2s linear, border 0.2s linear, box-shadow 0.2s linear; }
+  color: #515a6e;
+  background-color: #fff;
+  border-color: #dcdee2; }
   .axis-btn-long {
     width: 100%; }
-  .axis-btn .axis-icon {
-    line-height: 1.5; }
-  .axis-btn > span, .axis-btn > i {
-    display: inline-block; }
-  .axis-btn, .axis-btn:active, .axis-btn:focus {
-    outline: 0; }
-  .axis-btn:not([disabled]):hover {
-    text-decoration: none; }
-  .axis-btn:not([disabled]):active {
-    outline: 0; }
-  .axis-btn.disabled, .axis-btn[disabled] {
-    cursor: not-allowed; }
-    .axis-btn.disabled > *, .axis-btn[disabled] > * {
-      pointer-events: none; }
-  .axis-btn-large {
-    height: 40px;
-    padding: 0 15px;
-    font-size: 16px;
-    border-radius: 4px; }
-  .axis-btn-small {
-    height: 24px;
-    padding: 0 7px;
-    font-size: 14px;
-    border-radius: 3px; }
+  .axis-btn:hover {
+    color: #828ca3;
+    background-color: white;
+    border-color: white; }
+  .axis-btn:active, .axis-btn.active {
+    color: #5c667d;
+    background-color: white;
+    border-color: #eaebee; }
+  .axis-btn.disabled, .axis-btn.disabled:hover, .axis-btn.disabled:focus, .axis-btn.disabled:active, .axis-btn.disabled.active, .axis-btn[disabled], .axis-btn[disabled]:hover, .axis-btn[disabled]:focus, .axis-btn[disabled]:active, .axis-btn[disabled].active,
+  fieldset[disabled] .axis-btn,
+  fieldset[disabled] .axis-btn:hover,
+  fieldset[disabled] .axis-btn:focus,
+  fieldset[disabled] .axis-btn:active,
+  fieldset[disabled] .axis-btn.active {
+    color: #c5c8ce;
+    background-color: #f7f7f7;
+    border-color: #dcdee2; }
+  .axis-btn:hover {
+    color: #8cc0f7;
+    background-color: white;
+    border-color: #8cc0f7; }
+  .axis-btn:active, .axis-btn.active {
+    color: #4599f2;
+    background-color: white;
+    border-color: #4599f2; }
+  .axis-btn:focus {
+    box-shadow: 0 0 0 2px #8cc0f7; }
   .axis-btn-primary {
     color: #fff;
     background-color: #2d8cf0;
@@ -67,15 +58,15 @@
       box-shadow: 0 0 0 2px #8cc0f7; }
   .axis-btn-dashed {
     border-style: dashed;
-    color: #e6ebf1;
+    color: #515a6e;
     background-color: #fff;
     border-color: #dcdee2; }
     .axis-btn-dashed:hover {
-      color: white;
+      color: #828ca3;
       background-color: white;
       border-color: white; }
     .axis-btn-dashed:active, .axis-btn-dashed.active {
-      color: #f6f8fa;
+      color: #5c667d;
       background-color: white;
       border-color: #eaebee; }
     .axis-btn-dashed.disabled, .axis-btn-dashed.disabled:hover, .axis-btn-dashed.disabled:focus, .axis-btn-dashed.disabled:active, .axis-btn-dashed.disabled.active, .axis-btn-dashed[disabled], .axis-btn-dashed[disabled]:hover, .axis-btn-dashed[disabled]:focus, .axis-btn-dashed[disabled]:active, .axis-btn-dashed[disabled].active,
@@ -98,15 +89,15 @@
     .axis-btn-dashed:focus {
       box-shadow: 0 0 0 2px #8cc0f7; }
   .axis-btn-text {
-    color: #e6ebf1;
+    color: #515a6e;
     background-color: transparent;
     border-color: transparent; }
     .axis-btn-text:hover {
-      color: white;
+      color: #828ca3;
       background-color: rgba(51, 51, 51, 0);
       border-color: rgba(51, 51, 51, 0); }
     .axis-btn-text:active, .axis-btn-text.active {
-      color: #f6f8fa;
+      color: #5c667d;
       background-color: rgba(13, 13, 13, 0);
       border-color: rgba(13, 13, 13, 0); }
     .axis-btn-text.disabled, .axis-btn-text.disabled:hover, .axis-btn-text.disabled:focus, .axis-btn-text.disabled:active, .axis-btn-text.disabled.active, .axis-btn-text[disabled], .axis-btn-text[disabled]:hover, .axis-btn-text[disabled]:focus, .axis-btn-text[disabled]:active, .axis-btn-text[disabled].active,

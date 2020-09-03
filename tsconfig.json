@@ -20,9 +20,6 @@
     ],
     "skipLibCheck": true
   },
-  "include": [
-    "typings/*.ts"
-  ],
   "exclude": [
     "node_modules"
   ]
