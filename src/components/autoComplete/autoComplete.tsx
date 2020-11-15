@@ -3,7 +3,7 @@ import { AutoCompleteProps, DataSourceType } from './types';
 import useDebounce from '../../hooks/useDebounce';
 import useClickOutSide from '../../hooks/useClickOutSide';
 
-const AutoComplete: FC<AutoCompleteProps> = props => {
+const AutoComplete: FC<AutoCompleteProps> = (props) => {
   const { fetchSuggestions, onSelect, value, renderOptions, ...restProps } = props;
 
   const [inputValue, setInputValue] = useState(value as string);
@@ -17,8 +17,7 @@ const AutoComplete: FC<AutoCompleteProps> = props => {
 
   useClickOutSide(componentRef, () => setSuggestions([]));
 
-
-  return <div/>;
+  return <div />;
 };
 
 export default AutoComplete;

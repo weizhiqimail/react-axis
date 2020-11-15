@@ -14,4 +14,3 @@ function useDebounce(value: any, delay = 30) {
 }
 
 export default useDebounce;
-

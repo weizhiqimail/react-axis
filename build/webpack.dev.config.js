@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const {merge} = require('webpack-merge');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -7,11 +6,9 @@ const webpackBaseConfig = require('./webpack.base.config.js');
 
 module.exports = merge(webpackBaseConfig, {
   devtool: 'eval-source-map',
-
   entry: {
     main: './examples/index.tsx',
   },
-
   output: {
     path: path.join(__dirname, '../examples/dist'),
     publicPath: '',
@@ -33,5 +30,4 @@ module.exports = merge(webpackBaseConfig, {
     historyApiFallback: true,
     hot: true
   }
-
 });

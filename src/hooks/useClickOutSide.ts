@@ -1,6 +1,6 @@
 import { RefObject, useEffect } from 'react';
 
-function useClickOutSide(ref: RefObject<HTMLElement>, handler: Function) {
+function useClickOutSide(ref: RefObject<HTMLElement>, handler: (e: MouseEvent) => void) {
   useEffect(() => {
     const listener = (event: MouseEvent) => {
       if (!ref.current || ref.current.contains(event.target as HTMLElement)) {

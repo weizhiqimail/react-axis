@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./build/webpack.dev.config.js",
+    "build": "webpack --config ./build/webpack.build.config.js",
     "format": "eslint ./{src,examples}/**/*.{js,jsx,ts,tsx} --quiet --fix",
     "scss": "nodemon ./sass/example.js"
   },
@@ -53,11 +54,16 @@
     "sass-loader": "^10.0.1",
     "scss-loader": "^0.0.1",
     "style-loader": "^1.2.1",
+    "terser-webpack-plugin": "^5.0.3",
     "ts-loader": "^8.0.3",
     "typescript": "^4.0.2",
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-merge": "^5.1.2"
+  },
+  "dependencies": {
+    "optimize-css-assets-webpack-plugin": "^5.0.4",
+    "postcss-safe-parser": "^5.0.2"
   }
 }
